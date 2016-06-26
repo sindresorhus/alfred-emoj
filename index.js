@@ -15,14 +15,20 @@ got('emoji.getdango.com/api/emoji', {
 			const emoji = x.text;
 			all += emoji;
 			return {
-				title: `   ${emoji}`,
-				arg: emoji
+				title: emoji,
+				arg: emoji,
+				icon: {
+					path: ' ' // hide icon
+				}
 			};
 		});
 
 	items.push({
-		title: `   ${all}`,
-		arg: all
+		title: all,
+		arg: all,
+		icon: {
+			path: ' '
+		}
 	});
 
 	console.log(JSON.stringify({items}));
