@@ -71,7 +71,11 @@
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string>PATH=/usr/local/bin:$($(echo $SHELL) -ic 'echo $PATH'):$PATH
+				<string># various tricks to get the user's PATH
+# PATH is not set when run from GUI apps on macOS
+eval $(/usr/libexec/path_helper -s)
+export PATH=/usr/local/bin:$($(echo $SHELL) -ic 'echo $PATH'):$PATH
+
 node index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
