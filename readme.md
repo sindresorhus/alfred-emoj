@@ -2,7 +2,7 @@
 
 > [Alfred 3](https://www.alfredapp.com) workflow to find relevant emoji from text
 
-<img src="screenshot.png" width="694">
+<img src="screenshot-combined.png" width="895">
 
 Uses the API from this great article on [Emoji & Deep Learning](http://getdango.com/emoji-and-deep-learning.html).<br>
 Check out the [Dango app](http://getdango.com) if you want something like this on your phone.
