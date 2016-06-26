@@ -114,7 +114,7 @@ node index.js "$1"</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>0.1.0</string>
+	<string>0.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/sindresorhus/alfred-emoj</string>
 </dict>
