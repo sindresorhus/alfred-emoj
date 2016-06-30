@@ -35,6 +35,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>FAE7F0FF-CBA9-49C7-9C3E-6CD447146F74</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
@@ -54,15 +71,15 @@
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string># various tricks to get the user's PATH
-# PATH is not set when run from GUI apps on macOS
-eval $(/usr/libexec/path_helper -s)
-export PATH=/usr/local/bin:$($(echo $SHELL) -ic 'echo $PATH'):$PATH
+				<string>eval $(/usr/libexec/path_helper -s)
+eval "$($SHELL -i -l -c 'echo -e "\n"PATH=\"$PATH:\$PATH\""\n"' 2&gt;/dev/null | grep "^PATH=")"
+export PATH
 
-NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"
-
-node index.js "$1"</string>
+if command -v node &gt;/dev/null 2&gt;&amp;1; then
+	node index.js "$1"
+else
+	echo $'{"items":[{"title": "Couldn\'t find the `node` binary", "subtitle": "Symlink it to `/usr/local/bin`"}]}'
+fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -80,23 +97,6 @@ node index.js "$1"</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>81E50DB1-23ED-46C6-BB73-4AA70B96FE96</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>FAE7F0FF-CBA9-49C7-9C3E-6CD447146F74</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
