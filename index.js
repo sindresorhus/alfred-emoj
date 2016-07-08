@@ -1,10 +1,11 @@
 'use strict';
+const alfy = require('alfy');
 const got = require('got');
 
 got('emoji.getdango.com/api/emoji', {
 	json: true,
 	query: {
-		q: process.argv[2]
+		q: alfy.input
 	}
 })
 .then(res => {
@@ -31,17 +32,5 @@ got('emoji.getdango.com/api/emoji', {
 		}
 	});
 
-	console.log(JSON.stringify({items}));
-})
-.catch(err => {
-	console.log(JSON.stringify({
-		items: [{
-			title: err.name,
-			subtitle: err.message,
-			valid: false,
-			text: {
-				copy: err.stack
-			}
-		}]
-	}));
+	alfy.output(items);
 });
