@@ -1,20 +1,18 @@
 'use strict';
 const alfy = require('alfy');
-const got = require('got');
 
-got('emoji.getdango.com/api/emoji', {
-	json: true,
+alfy.fetch('emoji.getdango.com/api/emoji', {
 	query: {
 		q: alfy.input
 	}
-})
-.then(res => {
+}).then(data => {
 	let all = '';
 
-	const items = res.body.results
+	const items = data.results
 		.map(x => {
 			const emoji = x.text;
 			all += emoji;
+
 			return {
 				title: emoji,
 				arg: emoji,
