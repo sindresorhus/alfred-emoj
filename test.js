@@ -2,7 +2,9 @@ import test from 'ava';
 import alfyTest from 'alfy-test';
 
 test(async t => {
-	const result = await alfyTest('gimme cats');
+	const alfy = alfyTest();
+
+	const result = await alfy('gimme cats');
 
 	t.deepEqual(result[0], {
 		title: '🐱',

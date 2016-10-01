@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>name</key>
+	<string>Emoj</string>
 	<key>bundleid</key>
 	<string>com.sindresorhus.emoj</string>
 	<key>category</key>
@@ -22,14 +24,8 @@
 			</dict>
 		</array>
 	</dict>
-	<key>createdby</key>
-	<string>Sindre Sorhus</string>
-	<key>description</key>
-	<string>Find relevant emoji from text</string>
 	<key>disabled</key>
 	<false/>
-	<key>name</key>
-	<string>Emoj</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -112,9 +108,5 @@
 			<integer>10</integer>
 		</dict>
 	</dict>
-	<key>version</key>
-	<string>0.1.3</string>
-	<key>webaddress</key>
-	<string>https://github.com/sindresorhus/alfred-emoj</string>
 </dict>
 </plist>

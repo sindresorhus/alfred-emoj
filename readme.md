@@ -10,7 +10,9 @@ Check out the [Dango app](http://getdango.com) if you want something like this o
 
 ## Install
 
-[Install the workflow.](http://www.packal.org/workflow/emoj)
+```
+$ npm install --global alfred-npms
+```
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
