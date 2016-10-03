@@ -11,7 +11,7 @@ Check out the [Dango app](http://getdango.com) if you want something like this o
 ## Install
 
 ```
-$ npm install --global alfred-npms
+$ npm install --global alfred-emoj
 ```
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
