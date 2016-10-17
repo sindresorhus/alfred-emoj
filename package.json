@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "xo && ava",
-    "postinstall": "alfred-link"
+    "postinstall": "alfy-init"
   },
   "files": [
     "index.js",
@@ -36,9 +36,7 @@
     "alfy"
   ],
   "dependencies": {
-    "alfred-link": "^0.1.4",
-    "alfred-notifier": "^0.2.0",
-    "alfy": "^0.4.0"
+    "alfy": "^0.5.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
