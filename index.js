@@ -17,7 +17,7 @@ alfy.fetch('emoji.getdango.com/api/emoji', {
 				title: emoji,
 				arg: emoji,
 				icon: {
-					path: ' ' // hide icon
+					path: ' ' // Hide icon
 				}
 			};
 		});
