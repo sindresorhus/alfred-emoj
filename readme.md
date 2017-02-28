@@ -31,6 +31,7 @@ When at the top, press <kbd>▲</kbd> and <kbd>Enter</kbd>, to copy all the emoj
 - [emoj](https://github.com/sindresorhus/emoj) - Find relevant emoji from text on the command-line
 - [alfred-npms](https://github.com/sindresorhus/alfred-npms) - Search for npm packages with npms.io
 - [alfred-dark-mode](https://github.com/sindresorhus/alfred-dark-mode) - Toggle the system dark mode
+- [alfred-xcode](https://github.com/sindresorhus/alfred-xcode) - Open Xcode projects and workspaces
 - [alfred-simple](https://github.com/sindresorhus/alfred-simple) - Simple theme
 - [alfy](https://github.com/sindresorhus/alfy) - Create Alfred workflows with ease
 
