@@ -19,7 +19,7 @@ $ npm install --global alfred-emoj
 
 ## Usage
 
-In Alfred, type `emoj`, <kbd>Enter</kbd>, and some text, to find relevant emoji.
+In Alfred, type `emoj` and a search term, to find relevant emoji.
 
 Select an emoji and press <kbd>Enter</kbd> to copy it to the clipboard.
 
