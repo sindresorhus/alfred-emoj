@@ -1,26 +1,27 @@
 'use strict';
 const alfy = require('alfy');
 
-alfy.fetch('emoji.getdango.com/api/emoji', {
-	query: {
-		q: alfy.input
-	}
-}).then(data => {
+(async () => {
+	const data = await alfy.fetch('https://emoji.getdango.com/api/emoji', {
+		query: {
+			q: alfy.input
+		}
+	});
+
 	let all = '';
 
-	const items = data.results
-		.map(x => {
-			const emoji = x.text;
-			all += emoji;
+	const items = data.results.map(item => {
+		const emoji = item.text;
+		all += emoji;
 
-			return {
-				title: emoji,
-				arg: emoji,
-				icon: {
-					path: ' ' // Hide icon
-				}
-			};
-		});
+		return {
+			title: emoji,
+			arg: emoji,
+			icon: {
+				path: ' ' // Hide icon
+			}
+		};
+	});
 
 	items.push({
 		title: all,
@@ -31,4 +32,5 @@ alfy.fetch('emoji.getdango.com/api/emoji', {
 	});
 
 	alfy.output(items);
-});
+})();
+

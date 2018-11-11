@@ -1,47 +1,47 @@
 {
-  "name": "alfred-emoj",
-  "version": "1.0.0",
-  "description": "Alfred 3 workflow to find relevant emoji from text",
-  "license": "MIT",
-  "repository": "sindresorhus/alfred-emoj",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava",
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
-  },
-  "files": [
-    "index.js",
-    "icon.png",
-    "info.plist"
-  ],
-  "keywords": [
-    "emoj",
-    "emoji",
-    "emojis",
-    "smiley",
-    "emoticon",
-    "search",
-    "detect",
-    "find",
-    "alfred",
-    "alfred-workflow",
-    "workflow",
-    "alfy"
-  ],
-  "dependencies": {
-    "alfy": "^0.6.0"
-  },
-  "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "alfred-emoj",
+	"version": "1.0.0",
+	"description": "Alfred 3 workflow to find relevant emoji from text",
+	"license": "MIT",
+	"repository": "sindresorhus/alfred-emoj",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava",
+		"postinstall": "alfy-init",
+		"preuninstall": "alfy-cleanup"
+	},
+	"files": [
+		"index.js",
+		"icon.png",
+		"info.plist"
+	],
+	"keywords": [
+		"emoj",
+		"emoji",
+		"emojis",
+		"smiley",
+		"emoticon",
+		"search",
+		"detect",
+		"find",
+		"alfred",
+		"alfred-workflow",
+		"workflow",
+		"alfy"
+	],
+	"dependencies": {
+		"alfy": "^0.8.0"
+	},
+	"devDependencies": {
+		"alfy-test": "^0.3.0",
+		"ava": "^0.25.0",
+		"xo": "^0.23.0"
+	}
 }
