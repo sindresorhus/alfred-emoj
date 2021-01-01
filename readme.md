@@ -1,4 +1,4 @@
-# alfred-emoj [![Build Status](https://travis-ci.org/sindresorhus/alfred-emoj.svg?branch=master)](https://travis-ci.org/sindresorhus/alfred-emoj)
+# alfred-emoj
 
 > [Alfred 3](https://www.alfredapp.com) workflow to find relevant emoji from text
 
