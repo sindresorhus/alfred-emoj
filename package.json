@@ -1,13 +1,13 @@
 {
 	"name": "alfred-emoj",
 	"version": "2.0.0",
-	"description": "Alfred 3 workflow to find relevant emoji from text",
+	"description": "Alfred workflow to find relevant emoji from text",
 	"license": "MIT",
 	"repository": "sindresorhus/alfred-emoj",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=8"
