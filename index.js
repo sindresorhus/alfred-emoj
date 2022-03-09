@@ -5,7 +5,7 @@ const emoj = require('emoj');
 (async () => {
 	const emojis = (await emoj(alfy.input));
 
-	const items = emojis.map(emoji => {		
+	const items = emojis.map(emoji => {
 		return {
 			title: emoji,
 			arg: emoji,

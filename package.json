@@ -37,7 +37,8 @@
 		"alfy"
 	],
 	"dependencies": {
-		"alfy": "^0.8.0"
+		"alfy": "^0.8.0",
+		"emoj": "^3.2.0"
 	},
 	"devDependencies": {
 		"alfy-test": "^0.3.0",
