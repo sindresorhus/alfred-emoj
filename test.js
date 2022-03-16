@@ -7,8 +7,8 @@ test('main', async t => {
 	const result = await alfy('gimme cats');
 
 	t.deepEqual(result[0], {
-		title: '🐱',
-		arg: '🐱',
+		title: '😺',
+		arg: '😺',
 		icon: {
 			path: ' '
 		}
