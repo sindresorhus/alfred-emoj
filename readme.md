@@ -4,16 +4,13 @@
 
 <img src="screenshot-combined.png" width="895" height="554">
 
-Uses the API from this great article on [Emoji & Deep Learning](http://getdango.com/emoji-and-deep-learning.html).<br>
-Check out the [Dango app](http://getdango.com) if you want something like this on your phone.
-
 ## Install
 
-```
-$ npm install --global alfred-emoj
+```sh
+npm install --global alfred-emoj
 ```
 
-*Requires [Node.js](https://nodejs.org) 8+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
+*Requires [Node.js](https://nodejs.org) 14+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
 ## Usage
 

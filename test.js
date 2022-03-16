@@ -10,7 +10,7 @@ test('main', async t => {
 		title: '😺',
 		arg: '😺',
 		icon: {
-			path: ' '
-		}
+			path: ' ',
+		},
 	});
 });
